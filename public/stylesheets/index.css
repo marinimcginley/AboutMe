@@ -1,0 +1,34 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+main {
+    margin: 20px;
+}
+
+header {
+    background-color:#68BB59;
+    padding: 20px;
+    color: white;
+}
+
+footer {
+    background-color: #68BB59;
+    padding: 20px;
+    color: white;
+}
+.my-image {
+    border: 4px solid black; 
+    border-radius: 50%;
+    /*margin: 10px;*/
+}
+
+.title {
+    font-size: 1.2rem;
+}
+
+.experience {
+    margin: 20px 0px 20px 0px;
+    
+}
