@@ -1,34 +1,252 @@
+/* BANNER, HEADER AND FOOTER */
+.main-header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    height: 3em;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid 2px pink; */
+    background-color: #FFF;
+}
+
+.main-header a:visited,
+.main-header a:link {
+    color: #000;
+    text-decoration: none;
+}
+ul li {
+    margin-bottom: 1em;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+.banner {
+    margin-top: 3em;
+    color: #FFF;
+    text-align: center;
+    background-color: #F54291;
+    padding: 1em 0;
+}
+
+.banner a:visited,
+.banner a:link {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* INTRO */
+
+.intro {
+    /* border: solid 2px #6D0C74; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.name {
+    margin: 1em 0 0 0;
+}
+
+.my-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* ABOUT */
+
+#about {
+    /* border: solid 2px #7F78D5; */
+}
+
+.about-me {
+    padding: 1em 1em;
+    background-color: #FFF;
+    border-radius: 20px;
+    margin: 0;
+}
+
+/* EDUCATION */
+
+#education {
+    /* border: solid 2px #FBC; */
+}
+
+.container-education {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 1em;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.image-container {
+    max-width: 56px;
+    min-width: 56px;
+    max-height: 56px;
+    min-height: 56px;
+    margin-right: 1em;
+    text-align: center;
+    margin-top: 1em;
+    /* vertical-align: middle; */
+}
+
+.penninn {
+    position: relative;
+    top: 10%;
+}
+
+.rvk {
+    max-height: 100%;
+    height: 56px;
+}
+
+.hi,
+.penninn,
+.rvk
+{
+    max-width: 100%;
+}
+
+/* EMPLOYMENT */
+
+#employment {
+    /* border: solid 2px #B2E4DF; */
+}
+
+.container-employment {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    padding: 1em;
+    background-color: #FFF;
+    border-radius: 20px;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.wrapper a:visited,
+.wrapper a:link {
+    color: #000;
+    text-decoration: none;
+    /* font-size: 1em; */
+}
+
+/* FOOTER */
+
+#contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F54291; 
+    /* text-align: center; */
+    color: #FFF;
+}
+
+#contact a:visited,
+#contact a:link {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
-    margin: 20px;
+    margin: 0 2em;
+    background-color: #B1E8ED;
+    padding: 0 2em;
 }
 
-header {
-    background-color:#68BB59;
-    padding: 20px;
-    color: white;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-footer {
-    background-color: #68BB59;
-    padding: 20px;
-    color: white;
-}
-.my-image {
-    border: 4px solid black; 
-    border-radius: 50%;
-    /*margin: 10px;*/
+h2 {
+    margin: 1em;
 }
 
-.title {
-    font-size: 1.2rem;
+.during {
+    color: rgba(0,0,0,0.6);
 }
 
-.experience {
-    margin: 20px 0px 20px 0px;
-    
+@media (min-width: 600px) {
+    .container-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    ul li {
+        margin: 0;
+    }
+
+    .intro {
+        flex-direction: row;
+        padding: 1em;
+        text-align: left;
+        align-items: flex-end;
+    }
+
+    .my-image {
+        margin-right: 1em;
+    }
+
+    .name {
+        width: 7em;
+    }
+
+    #contact {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+}
+
+@media (min-width: 900px) {
+    .container-nav {
+        padding: 0 5em;
+    }
+
+    .my-image {
+        margin-right: 1em;
+    }
+
+    main {
+        margin: 0 5em;
+    }
+
+    #contact {
+        padding: 0 5em;
+    }
 }

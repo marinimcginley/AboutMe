@@ -6,79 +6,104 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1>My Webpage</1>
+    <header class="main-header">
+      <div><a href="#">Projects</a></div>
     </header>
-    <main>
-      <figure>
-        <img class="my-image" src="https://placeimg.com/200/200/animals" alt="Marín McGinley"/>
-      </figure>
-      <h1 class="name">Marín Ingibjörg McGinley</h1>
+    <div class="banner">
+      <h1>My Webpage</h1>
       <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#employment">Employement History</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="container-nav">
+          <li class="item-nav"><a href="#about">About Me</a></li>
+          <li class="item-nav"><a href="#education">Education</a></li>
+          <li class="item-nav"><a href="#employment">Employement History</a></li>
+          <li class="item-nav"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    </div>
+    <main>
+      <div class="intro">
+        <img class="my-image" src="https://placeimg.com/200/200/animals" alt="Marín McGinley"/>
+        <h1 class="name">Marín Ingibjörg McGinley</h1>
+      </div>
       <section id="about">
         <h2>About Me</h2>
-        <p>I am a blablablabl</p>
+        <p class="about-me">I am a blablablabl</p>
       </section>
       <section id="education">
         <h2>Education</h2>
-        <ul>
-          <li class="experience">
-            <p class="title">University of Iceland</p>
+        <div class="container-education">
+          <div class="image-container">
+            <img src="images/HI-logo.png" class="hi logo"/>
+          </div>
+          <div class="wrapper">
+            <h3>University of Iceland</h3>
             <p class="description">B.Sc., Software Engineering</p>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
       <section id="employment">
         <h2>Employment History</h2>
-        <ul>
-          <li class="experience">
-            <p class="title">Caregiver</p>
-            <a href="https://reykjavik.is/" class="employer">City of Reykjavík</a>
-            <p class="during">January 2018 - Present</p>
-            <p class="description">Assisting people with disabilities to become more independent, self-sufficient and self-reliant. 
-              Preparing individuals for independent living arrangements.</p>
-          </li>
-          <li class="experience">
-            <p class="title">Teaching Assistant</p>
-            <a href="https://hi.is/" class="employer">University of Iceland</a>
-            <p class="during">January 2019 - April 2019</p>
-            <p class="description">Worked as a teaching assistant in the course Analysis of Algorithms. 
-              I was responsible for assisting students with their homework as well as grading assignments. 
-              The course focuses on different types of algorithmic-techniques, such as recursion, backtracking, 
-              dynamic programming and greedy algorithms as well as data structures.</p>
-          </li>
-          <li class="experience">
-              <p class="title">Retail Cachier</p>
+        <div class="container-employment">
+          <div class="item">
+            <div class="image-container">
+              <img src="images/Rvk-logo.png" class="rvk logo"/>
+            </div>  
+            <div class="wrapper">
+              <h3>Caregiver</h3>
+              <a href="https://reykjavik.is/" class="employer">City of Reykjavík</a>
+              <p class="during">January 2018 - Present</p>
+              <p class="description">Assisting people with disabilities to become more independent, self-sufficient and self-reliant. 
+                Preparing individuals for independent living arrangements.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="images/HI-logo.png" class="hi logo"/>
+            </div>
+            <div class="wrapper">
+              <h3>Teaching Assistant</h3>
+              <a href="https://hi.is/" class="employer">University of Iceland</a>
+              <p class="during">January 2019 - April 2019</p>
+              <p class="description">Worked as a teaching assistant in the course Analysis of Algorithms. 
+                I was responsible for assisting students with their homework as well as grading assignments. 
+                The course focuses on different types of algorithmic-techniques, such as recursion, backtracking, 
+                dynamic programming and greedy algorithms as well as data structures.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="images/Penninn-logo.png" class="penninn logo"/>
+            </div>
+            <div class="wrapper">
+              <h3>Retail Cachier</h3>
               <a href="https://www.penninn.is" class="employer">Penninn Eymundsson</a>
               <p class="during">September 2017 - August 2018</p>
-          </li>
-          <li class="experience">
-              <p class="title">Caregiver</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="images/Rvk-logo.png" class="rvk logo"/>
+            </div>
+            <div class="wrapper">
+              <h3>Caregiver</h3>
               <a href="https://reykjavik.is/stadir/droplaugarstadir-hjukrunarheimili" class="employer">Droplaugarstaðir</a>
               <p class="during">May 2015 - August 2016</p>
               <p class="description">Worked as caregiver in a nursing home</p>
-          </li>
-        </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer id="contact">
-      <p><strong>email: </strong><a href="mailto:marinmcginley@gmail.com?
+      <p><strong>Email: </strong><br><a href="mailto:marinmcginley@gmail.com?
         subject=Hi%20there!">marinmcginley@gmail.com</a></p>
-      <p><strong>phonenumber: </strong>+354-845-6401</p>
-      <p><strong>address: </strong>
-        <address>
-            Sjafnargata 12<br>
-            101 Reykjavík<br>
+      <p><strong>Phonenumber: </strong><br>+354-845-6401</p>
+      <p><strong>Address: </strong><br>
+            Sjafnargata 12,<br>
+            101 Reykjavík,<br>
             Iceland
-        </address>
       </p>
     </footer>
   </body>
 </html>
+
