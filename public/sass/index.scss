@@ -1,0 +1,223 @@
+@import 'components/header';
+@import 'components/footer';
+
+$main-header-color: #FFF;
+$banner-color: linear-gradient(to right, #60bddc, #e6700d);
+$body-color: #FFF;
+$div-color: #FFF;
+$main-color: #FFF;
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h2 {
+    padding-left: 1rem; 
+}
+
+.during {
+    color: rgba(0,0,0,0.6);
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: $body-color;
+
+    .banner {
+        margin-top: 3em;
+        color: #FFF;
+        text-align: center;
+        background: $banner-color;
+        padding: 1em 0;
+        .container-nav {
+            display: flex;
+            flex-direction: column;
+            li {
+                margin-bottom: 1em;
+                a:visited,
+                a:link {
+                    color: #FFF;
+                    text-decoration: none;
+                    font-size: 1em;
+                }
+            }
+            
+            li:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (min-width: 600px) {
+                li {
+                    margin: 0;
+                }
+            }
+        
+        }
+
+        @media (min-width: 600px) {
+            .container-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .container-nav {
+                padding: 0 5em;
+            }
+        }
+    }
+
+    main {
+        color: #000;
+        margin: 0 2em;
+        background-color: $main-color;
+        padding: 2em 2em 1em 2em;
+
+        p {
+            color: #000;
+        }
+
+        h3 {
+            color: #000;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .my-image {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+
+            @media (min-width: 600px) {
+                .my-image {
+                    margin-right: 1em;
+                }
+            }
+
+            @media (min-width: 900px) {
+                .my-image {
+                    margin-right: 1em;
+                }
+            }
+
+            .name {
+                margin: 1em 0 0 0;
+            }
+
+            @media (min-width: 600px) {
+                .name {
+                    width: 7em;
+                }
+            }
+        }
+
+        @media (min-width: 600px) {
+            .intro {
+                flex-direction: row;
+                padding: 1em;
+                text-align: left;
+                align-items: flex-end;
+            }
+        }
+
+        #about {
+            .about-me {
+                padding: 1em 1em;
+                background-color: $div-color;
+                border-radius: 5px;
+                margin: 0;
+
+                a:link,
+                a:visited {
+                    color: #000;
+                    text-decoration: none;
+                    font-size: 1em;
+                }
+            }
+        }
+        .image-container {
+            max-width: 56px;
+            min-width: 56px;
+            max-height: 56px;
+            min-height: 56px;
+            margin-right: 2em;
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        .penninn {
+            position: relative;
+            top: 10%;
+        }
+        
+        .rvk {
+            max-height: 100%;
+            height: 56px;
+        }
+        
+        .hi,
+        .penninn,
+        .rvk
+        {
+            max-width: 100%;
+        }
+
+        #education {
+
+            .container-education {
+                display: flex;
+                flex-direction: row;
+                padding: 1em 1em;
+                background-color: $div-color;
+                border-radius: 5px;
+            }
+        }
+
+        #employment {
+
+            .container-employment {
+                display: flex;
+                flex-direction: column;
+
+                .item {
+                    padding: 1em;
+                    background-color: $div-color;
+                    border-radius: 5px;
+                    display: flex;
+                    margin-bottom: 1em;
+
+                    .wrapper {
+                        a:visited,
+                        a:link {
+                            color: #000;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media (min-width: 900px) {
+        main {
+            margin: 0 5em;
+        }
+    } 
+}
+
+

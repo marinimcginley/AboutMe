@@ -1,0 +1,32 @@
+$banner-color: linear-gradient(to right, #60bddc, #e6700d);
+
+#contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $banner-color; 
+    /* text-align: center; */
+    color: #FFF;
+
+    a:visited,
+    a:link {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+}
+
+@media (min-width: 600px) {
+    #contact {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 900px) {
+    #contact {
+        padding: 0 5em;
+    }
+} 

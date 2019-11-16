@@ -6,9 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <div><a href="#">Projects</a></div>
-    </header>
+    <%- include('header'); -%>
     <div class="banner">
       <h1>My Webpage</h1>
       <nav>
@@ -27,7 +25,13 @@
       </div>
       <section id="about">
         <h2>About Me</h2>
-        <p class="about-me">I am a blablablabl</p>
+        <p class="about-me">In my studies I have for the past couple of years been mostly drawn to 
+          database management, design and implementation of algorithms, security and web programming. 
+          Throughout my school years I have also studied music and played violin and received a 
+          certificate of higher education for violin performance as I graduated from The Music 
+          College of Reykjavik in 2015.
+          You can see my projects <a href="/projects">here</a>.
+        </p>
       </section>
       <section id="education">
         <h2>Education</h2>
@@ -72,7 +76,7 @@
           </div>
           <div class="item">
             <div class="image-container">
-              <img src="images/Penninn-logo.png" class="penninn logo"/>
+              <img src="https://www.penninn.is/sites/penninn.is/themes/penninn_theme/stylesheets/images/svg/pen_eymundsson_logo.svg" class="penninn logo"/>
             </div>
             <div class="wrapper">
               <h3>Retail Cachier</h3>
@@ -94,16 +98,7 @@
         </div>
       </section>
     </main>
-    <footer id="contact">
-      <p><strong>Email: </strong><br><a href="mailto:marinmcginley@gmail.com?
-        subject=Hi%20there!">marinmcginley@gmail.com</a></p>
-      <p><strong>Phonenumber: </strong><br>+354-845-6401</p>
-      <p><strong>Address: </strong><br>
-            Sjafnargata 12,<br>
-            101 Reykjavík,<br>
-            Iceland
-      </p>
-    </footer>
+    <%- include('footer'); -%>
   </body>
 </html>
 

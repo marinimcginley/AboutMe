@@ -1,0 +1,57 @@
+@import 'components/header';
+@import 'components/footer';
+
+$body-color: #FFF;
+$banner-color: linear-gradient(to right, #60bddc, #e6700d);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-size: 14px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: $body-color;
+
+    main {
+        margin: 5em 2em 1em 2em;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .grid {
+                justify-items: center;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-gap: 1em;
+                
+                .project-border {
+                    background: $banner-color;
+                    padding: 0.2em;
+                    border-radius: 5px;
+                    margin-bottom: 1em;
+    
+                    .project-item {
+                        background-color: #FFF;
+                        border-radius: 4px;
+                        padding: 2em;
+                        height: 100%;
+                    }
+                }
+            }
+
+            @media (min-width: 700px) {
+                .grid {
+                    min-width: 650px;
+                }
+            }
+        }
+
+        
+    }
+}
+

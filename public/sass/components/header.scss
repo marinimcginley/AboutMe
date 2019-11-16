@@ -1,0 +1,33 @@
+$main-header-color: #FFF;
+$banner-color: linear-gradient(to right, #60bddc, #e6700d);
+
+
+.main-container { 
+    background:$banner-color;
+    height: 3.395em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    .main-header {
+        padding: 0;
+        margin: 0 0 1px 0;
+        width: 100%;
+        top: 0;
+        height: 3em;
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $main-header-color;
+        border-bottom: solid 1px rgba(0,0,0,0.4);
+        font-weight: bold;
+        font-size: 1.1em;
+
+        a:visited,
+        a:link {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
