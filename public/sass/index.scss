@@ -144,7 +144,6 @@ body {
                 a:link,
                 a:visited {
                     color: #000;
-                    text-decoration: none;
                     font-size: 1em;
                 }
             }
@@ -194,20 +193,26 @@ body {
                 flex-direction: column;
 
                 .item {
-                    padding: 1em;
+                    padding: 1em 1em 0 1em;
                     background-color: $div-color;
                     border-radius: 5px;
                     display: flex;
-                    margin-bottom: 1em;
 
                     .wrapper {
+                        border-bottom: solid 1px rgba(0,0,0,0.1);
+                        padding-bottom: 1em;
+                        width: 100%;
+
                         a:visited,
                         a:link {
                             color: #000;
-                            text-decoration: none;
                         }
                     }
-                }
+
+                    .last-wrapper {
+                        border-bottom: none;
+                    }
+                }   
             }
         }
     }
